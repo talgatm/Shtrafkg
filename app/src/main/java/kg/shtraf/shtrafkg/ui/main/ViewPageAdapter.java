@@ -1,4 +1,4 @@
-package kg.shtraf.shtrafkg;
+package kg.shtraf.shtrafkg.ui.main;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.Fragment;

@@ -1,12 +1,13 @@
-package kg.shtraf.shtrafkg;
+package kg.shtraf.shtrafkg.ui.main;
 
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+
+import kg.shtraf.shtrafkg.R;
+
 public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
@@ -24,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
          ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
 
          //adding Fragments
-        adapter.AddFragment(new Fragment_po_nomeru_ts(),"");
-        adapter.AddFragment(new Fragment_po_pin(),"");
-        adapter.AddFragment(new Fragment_po_nomeru_postanovleniya(),"");
+        adapter.AddFragment(new FragmentTSNumber(),"");
+        adapter.AddFragment(new FragmentPinCode(),"");
+        adapter.AddFragment(new FragmentProtocolNumber(),"");
 
         //adding Setup
 

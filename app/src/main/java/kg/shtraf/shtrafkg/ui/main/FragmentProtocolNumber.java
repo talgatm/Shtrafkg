@@ -1,4 +1,4 @@
-package kg.shtraf.shtrafkg;
+package kg.shtraf.shtrafkg.ui.main;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -7,20 +7,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import kg.shtraf.shtrafkg.R;
+
 /**
  * Created by User on 26.04.2018.
  */
 
-public class Fragment_po_nomeru_postanovleniya extends Fragment{
+public class FragmentProtocolNumber extends Fragment{
 
     View view;
-    public Fragment_po_nomeru_postanovleniya() {
+    public FragmentProtocolNumber() {
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.po_nomeru_postanovleniya_fragment,container,false);
+        view = inflater.inflate(R.layout.fragment_po_nomeru_postanovleniya,container,false);
         return view;
     }
 }

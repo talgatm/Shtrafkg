@@ -1,4 +1,4 @@
-package kg.shtraf.shtrafkg;
+package kg.shtraf.shtrafkg.ui.main;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import kg.shtraf.shtrafkg.R;
+
 /**
  * Created by User on 26.04.2018.
  */
 
-public class Fragment_po_pin extends Fragment{
+public class FragmentPinCode extends Fragment{
     View view;
 
-    public Fragment_po_pin() {
+    public FragmentPinCode() {
     }
     @Nullable
     @Override

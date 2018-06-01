@@ -5,54 +5,52 @@
     android:id="@+id/backround"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kg.shtraf.shtrafkg.MainActivity"
     android:orientation="vertical"
-    >
+    tools:context="kg.shtraf.shtrafkg.ui.main.MainActivity">
 
-<android.support.design.widget.AppBarLayout
-    android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:gravity="center"
-    android:elevation="0dp"
-    android:id="@+id/appbar_id">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(0312) 979-242                                   info@shtraf.kg"
-        android:textSize="15sp"
-        android:textColor="@color/tabtext"
-        android:padding="5dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Проверка неоплаченных штрафов"
-        android:textSize="20sp"
-        android:textColor="@color/tabtext"
-        android:padding="10dp"
-        />
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="0dp"
+        android:gravity="center">
 
-    <!--<ImageView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="(0312) 979-242                                   info@shtraf.kg"
+            android:textColor="@color/tabtext"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Проверка неоплаченных штрафов"
+            android:textColor="@color/tabtext"
+            android:textSize="20sp" />
+
+        <!--<ImageView-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
         <!--android:padding="100dp"-->
         <!--android:src="@drawable/logoo" />-->
-</android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabGravity="fill"
-        app:tabMode="fixed"
-        android:id="@+id/tablayout_id"
-        app:tabTextColor="@color/tabtext"
-        app:tabIndicatorColor="@color/tabindicatorcolor"
         android:background="@color/colorPrimary"
-        />
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/tabindicatorcolor"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/tabtext" />
+
     <android.support.v4.view.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/viewpager_id"
-        ></android.support.v4.view.ViewPager>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
